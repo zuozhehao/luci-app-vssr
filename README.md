@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/jerrykuku/staff/master/Helloworld_title.png"  >
+  <img src="https://raw.githubusercontent.com/jerrykuku/staff/master/helloworld-logo1.png" width="500px"  >
   <h1 align="center">
     An openwrt Internet surfing plug-in
   </h1>
