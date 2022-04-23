@@ -621,6 +621,7 @@ footer.mobile-hide {
     }
 
     .status-bar {
+        box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.3);
         background-color: rgba(37, 37, 38, 0.7);
         color: rgb(204, 204, 204);
     }
