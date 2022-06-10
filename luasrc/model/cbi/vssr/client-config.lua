@@ -159,8 +159,6 @@ o = s:option(Value, 'server_port', translate('Server Port'))
 o.datatype = 'port'
 o.rmempty = false
 
-o:depends('type', 'hysteria')
-
 o = s:option(Value, 'password', translate('Password'))
 o.password = true
 o.rmempty = true
