@@ -12,6 +12,7 @@ local hysteria = {
     down_mbps = tonumber(server.h_down_mbps),
     insecure = (server.insecure == '1') and true or false,
     retry = 3,
+    protocol = tostring(server.h_protocol),
 }
 
 if server.h_server_name ~= nil then
