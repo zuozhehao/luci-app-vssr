@@ -98,8 +98,8 @@ find_bin() {
 #添加定时执行脚本
 add_cron() {
     sed -i '/vssr.log/d' $CRON_FILE && echo '0 1 * * * echo "" > /tmp/vssr.log' >>$CRON_FILE
-    [ $(uci_get_by_type server_subscribe auto_update 0) -eq 1 ] && echo "0 $(uci_get_by_type server_subscribe auto_update_time) * * * /usr/bin/lua /usr/share/vssr/subscribe.lua" >>$CRON_FILE
-    [ $(uci_get_by_type server_subscribe auto_update 0) -eq 1 ] && echo "0 $(uci_get_by_type server_subscribe auto_update_time) * * * /usr/bin/lua /usr/share/vssr/update.lua" >>$CRON_FILE
+    [ $(uci_get_by_type server_subscribe auto_update 0) -eq 1 ] && echo "0 $(uci_get_by_type server_subscribe auto_update_time) * * * /usr/bin/lua/usr/share/vssr/subscribe.lua" >>$CRON_FILE
+    [ $(uci_get_by_type server_subscribe auto_update 0) -eq 1 ] && echo "0 $(uci_get_by_type server_subscribe auto_update_time) * * * /usr/bin/lua/usr/share/vssr/update.lua" >>$CRON_FILE
     crontab $CRON_FILE
 }
 
